@@ -1,3 +1,5 @@
+
+
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
@@ -15,14 +17,10 @@ int* plusOne(int* digits, int digitsSize, int* returnSize){
         {
             int temp = arr[i];
             (*returnSize)++;
-            digitsSize++;
             arr = (int *)realloc(arr,(*returnSize)*sizeof(int));
-            for(int j = (*returnSize) -1 ; j >0 ; j--)
-            {
-                arr[j]= temp % 10;
-                arr[j-1] = temp / 10;    
-            }
-            
+            memset(arr,0,(*returnSize)*sizeof(int));
+            arr[i+1]= temp % 10;
+            arr[i] = temp / 10;            
         }
         if (arr[i] >= 10)
         {
@@ -37,3 +35,4 @@ int* plusOne(int* digits, int digitsSize, int* returnSize){
     }
     return arr;
 }
+
