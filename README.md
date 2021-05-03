@@ -9,4 +9,4 @@
 ### Array
 | ID   | Difficulty |                  Title                   |                  Python                  |                   C                    |                 
 | ---- | :--------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | 
-| 1   |    Easy    | Two Sum| [Python](https://github.com/Jack-Cherish/LeetCode/blob/master/Array/Easy/1.Two%20Sum.md "悬停显示") | no |
+| 1   |    Easy    | Two Sum| no | [c](https://app.gitbook.com/@squid101203/s/leetcode-programming/leetcode/1.two-sum "悬停显示") |
